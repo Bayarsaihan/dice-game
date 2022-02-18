@@ -91,7 +91,7 @@ document.querySelector(".btn-hold").addEventListener("click", function() {
       scores[activePlayer];
 
     // Уг тоглогч хожсон эсэхийг (оноо нь 100-с их эсэх) шалгах
-    if (scores[activePlayer] >= 10) {
+    if (scores[activePlayer] >= 100) {
       // Тоглоомыг дууссан төлөвт оруулна
       isNewGame = false;
 
@@ -108,7 +108,7 @@ document.querySelector(".btn-hold").addEventListener("click", function() {
       switchToNextPlayer();
     }
   } else {
-    alert("Тоглоом дууссан байна. NEW GAME товчийг дарж шинээр эхлэнэ үү");
+    alert("Тоглоом дууссан байна. Start GAME товчийг дарж шинээр эхлэнэ үү");
   }
 });
 
